@@ -72,7 +72,7 @@ public class ProductControl extends HttpServlet {
 				bean = model.doRetrieveByKey(Integer.parseInt(request.getParameter("codice")));
 				request.setAttribute("updateProd", bean);
 			} catch (NumberFormatException e) {
-				e.printStackTrace();
+				
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}  
