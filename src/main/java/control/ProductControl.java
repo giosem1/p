@@ -75,7 +75,7 @@ public class ProductControl extends HttpServlet {
 				e.printStackTrace();
 			} catch (SQLException e) {
 				e.printStackTrace();
-			}
+			}  
 			finally {
 				RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/modifica-prodotto.jsp"); 
 				dispatcher.forward(request, response);
