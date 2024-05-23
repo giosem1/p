@@ -83,7 +83,7 @@ public class ProductControl extends HttpServlet {
 		}
 		else if (request.getParameter("action") != null && request.getParameter("action").compareTo("modifica") == 0) {
 			ProductBean bean = new ProductBean();
-			bean.setCodice(Integer.parseInt(request.getParameter("codice")));
+			bean.setCodice(Integer.parseInt(request.getParameter("codice")));  
 			bean.setNome(request.getParameter("nome"));
 			bean.setDescrizione(request.getParameter("descrizione"));
 			bean.setPrezzo(Double.parseDouble(request.getParameter("prezzo")));
